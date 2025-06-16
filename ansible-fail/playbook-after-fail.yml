@@ -1,0 +1,10 @@
+---
+- name: 'Showcase a playbook run after a failed job'
+  hosts: 'all'
+  gather_facts: true
+  tasks:
+
+  - name: 'Print an example message'
+    ansible.builtin.debug:
+      msg: 'This playbook did run after a failed task'
+...

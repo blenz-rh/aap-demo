@@ -7,3 +7,4 @@
     - name: 'Simply fail :)'
       ansible.builtin.fail:
         msg: 'Oh no!'
+...
