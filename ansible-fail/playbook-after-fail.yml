@@ -7,4 +7,9 @@
   - name: 'Print an example message'
     ansible.builtin.debug:
       msg: 'This playbook did run after a failed task'
+
+  - name: 'Display all variables/facts known for a host'
+    ansible.builtin.debug:
+      var: hostvars[inventory_hostname]
+      verbosity: 4
 ...
