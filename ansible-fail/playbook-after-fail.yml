@@ -10,5 +10,5 @@
 
   - name: 'Print environment variables'
     ansible.builtin.debug:
-      var: "lookup('ansible.builtin.env', 'AWX_TASK_ENV')"
+      var: "lookup('ansible.builtin.env', 'job_env')"
 ...
