@@ -1,6 +1,6 @@
 ---
 - name: 'Showcase a playbook run after a failed job'
-  hosts: 'all'
+  hosts: 'localhost'
   gather_facts: true
   tasks:
 
