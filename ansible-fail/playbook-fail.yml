@@ -1,0 +1,9 @@
+---
+- name: 'Playbook to reproduce a failed run'
+  hosts: 'all'
+  gather_facts: true
+  tasks:
+    
+    - name: 'Simply fail :)'
+      ansible.builtin.fail:
+        msg: 'Oh no!'
