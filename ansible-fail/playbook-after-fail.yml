@@ -8,7 +8,7 @@
     ansible.builtin.debug:
       msg: 'This playbook did run after a failed task'
 
-  - name: 'Display all variables/facts known for a host'
+  - name: 'Print environment variables'
     ansible.builtin.debug:
-      var: hostvars
+      var: "lookup('ansible.builtin.env', 'AWX_TASK_ENV')"
 ...
